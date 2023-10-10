@@ -1,0 +1,203 @@
+ /* Overall styling for the form container */
+ .form-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(189, 233, 247);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#head {
+    background-color: white;
+
+}
+
+h3 {
+    color: rgb(6, 122, 247);
+    background-color: rgb(201, 238, 250);
+    border: 2px solid rgb(7, 133, 230);
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+span {
+    border-bottom: 2px solid rgb(19, 190, 248);
+}
+
+/* Styling for form labels */
+label {
+    font-weight: bold;
+    float: left;
+}
+
+label>span {
+    text-decoration: none;
+    border: none;
+    color: red;
+}
+
+.row>option {
+    width: 100px;
+}
+
+#description {
+    height: 300PX;
+}
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.para {
+    font-size: 12px;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+     padding: 20px;
+    background-color: rgb(203, 226, 234);
+    border: 2px solid rgb(9, 188, 248);
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    h4 {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+}
+.gallery>h4 {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.gallery {
+    display: flex;
+    background-color: white;
+}
+
+/* Styling for textareas and input fields */
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select::after {
+    content: '▼';
+    /* Add your custom arrow character here */
+    position: absolute;
+    top: 70%;
+    color: rgb(211, 211, 211);
+    right: 10px;
+    /* Adjust the position of the arrow as needed */
+    transform: translateY(-50%);
+}
+
+#feature {
+    display: flex;
+}
+
+#feature>.button {
+    padding: 20px;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Styling for Add Listing button */
+.add-listing-button {
+    background-color: rgb(255, 98, 0);
+    color: white;
+    margin-left: 1300px;
+    padding: 10px;
+    width: 150px;
+}
+ /* Default styles for gallery and form */
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.form-container {
+    text-align: center;
+}
+
+#image_upload {
+    padding: 50px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #feature {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    h4 {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 10px;
+        float: left;
+        padding-left: 100px;
+        margin-right: 300px;
+    width: 430px;
+    }
+} 

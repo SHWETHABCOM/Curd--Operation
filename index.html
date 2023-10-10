@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to Bootstrap CSS (if using Bootstrap) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+    
+<body>
+    <!-- Login/Register Section -->
+    <div class="form-container" id="head">
+        <h2>Add Listing</h2>
+        <!-- Add login/register form here -->
+    </div>
+
+    <!-- Listing Details Section -->
+    <div class="form-container">
+        <h3>You can also <span>Login </span>or <span>Register first.</span></h3>
+        <form action="submit_listing.php" method="post">
+            <!-- Listing Title -->
+            <label for="listing_title">Listing Title <span>*</span>
+            </label>
+            <br>
+            <input type="text" id="listing_title" class="form-control" placeholder="Enter title here"
+                name="listing_title" required>
+            <!---->
+            <div class="controls">
+                <div class="row">
+                    <!-- Condition -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Condition<span>*</span></label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select </option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Type -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Type</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Make -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Make</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="controls">
+                <div class="row">
+                    <!-- Model -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Model</label>
+                            <select id="form_need" name="need" class="form-control" required="required"
+                                data-error="Please specify your need.">
+                                <option value="" selected disabled>Select Make First</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Price (USD)</label>
+                            <select id="form_need" name="need" class="form-control" required="required"
+                                data-error="Please specify your need.">
+                                <option value="" selected disabled><span class="doller">$</span></option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>Other</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <!-- Year -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Year</label>
+                            <input type="text" class="form-control">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="controls">
+                <div class="row">
+                    <!-- Drive Type -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Drive Type</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Transmission -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Transmission</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fuel Type -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Fuel Type</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+            <!---->
+            <div class="controls">
+                <div class="row">
+                    <!-- Mileage -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Mileage</label>
+                            <input type="text" class="form-control" placeholder="miles">
+                        </div>
+                    </div>
+                    <!-- Engine Size -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Engine Size</label>
+                            <input type="text" class="form-control" placeholder="L">
+                        </div>
+                    </div>
+                    <!-- Cylinders-->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Cylinders</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="controls">
+                <div class="row">
+                    <!-- Color -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Color</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select Make First</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Doors -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">Doors</label>
+                            <div class="custom-select">
+                                <select id="form_need" name="need" class="form-control" required="required"
+                                    data-error="Please specify your need.">
+                                    <option value="" selected disabled>Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VIN -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="form_need">VIN</label>
+                            <input type="text" class="form-control">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Description -->
+            <label for="description">Description</label><br>
+            <textarea id="description" class="form-control" name="description" rows="4" cols="50"
+                required></textarea><br>
+            <!----->
+
+            <!-- Video Link -->
+            <label for="video_link">Video - copy any online video link e.g. YouTube, Facebook, Instagram or .mp4</label>
+            <br>
+            <br>
+            <div style="position: relative;">
+                <input type="text" class="form-control" placeholder="Video link" id="video_link" name="video_link">
+                <span style="color: red; position: absolute; top: 50%; transform: translateY(-50%); right: 10px;">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                </span>
+            </div>
+
+            <!----->
+        </form>
+    </div>
+    <!-- Gallery -->
+    <div class="gallery">
+        <h4>Gallery</h4>
+        <p class="para">
+            <span style="color: red;">Quick Tips</span><span style="color: black;"> Attractive photos increase the popularity of the advertisement up to 5 times!</span>
+            <span style="color: rgb(243, 7, 7);">How do you take a good picture?</span>
+        </p>
+    </div>
+    <!---->
+     <!-- Form Container -->
+     <div class="form-container">
+        <input type="file" id="image_upload" name="image_upload" accept="image/*">
+    </div>
+    <!---->
+
+    <!-- Attachment -->
+    <div class="gallery">
+        <h4>Attachments </h4>
+    </div>
+    <div class="form-container">
+        <input type="file" id="image_upload" name="image_upload" accept="image/*">
+    </div>
+    <!---->
+    <!--Features-->
+    <div class="gallery">
+        <h4>Features</h4>
+    </div>
+
+    <div class="form-container" id="feature">
+        <div id="feature">
+            <div class="load" style="margin-top: 120px;"><span style="color: red;">Load all</span>
+            </div>
+        </div>
+        <div id="feature">
+            <div class="button"><button>360-degree camera</button></div>
+            <div class="button"><button> Blinding spot alert</button>
+            </div>
+            <div class="button"> <button> Bluetooth</button></div>
+            <div class="button"> <button>Cooled seats</button>
+            </div>
+            <div class="button"> <button>Heated seats</button></div>
+        </div>
+    </div>
+
+    <!---->
+    <!--Safety Features-->
+    <div class="gallery">
+        <h4>Safety Features</h4>
+    </div>
+
+    <div class="form-container" id="feature">
+        <div id="feature">
+            <div class="load" style="margin-top: 120px;"><span style="color: red;">Load all</span>
+            </div>
+        </div>
+        <div id="feature">
+            <div class="button"><button>Active head restraints</button></div>
+            <div class="button"><button>Adaptive headlights</button>
+            </div>
+            <div class="button"> <button> Backup camera</button></div>
+            <div class="button"> <button>Blind-spot warning</button>
+            </div>
+            <div class="button"> <button>Brake assit</button></div>
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit"  class="btn btn-primary" style="background-color: red; margin-left: 40px;">Add Listing</button>
+</body>
+</html>
+
+
+
+</body>
+</html>
